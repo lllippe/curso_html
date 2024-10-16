@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #000000; 
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header-itens {
+    display: flex;
+    gap: 80px;
+}
+
+.header-itens-link {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.container-presentation {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 15%;
+    align-items: center;
+    gap: 82px;
+}
+
+.container-elements {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.strong-text{
+    color: var(--cor-terciaria);
+}
+
+.h1-title {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+
+}
+
+.h2-title {
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+.p-size{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.button-redirect {
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    width: 50%;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-weight: 600;
+    gap: 16px;
+}
+
+.button-redirect:hover {
+    background-color: var(--cor-hover);
+}
+
+.align-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.img-presentation {
+    width: 50%;
+}
+
+.footer {
+    padding: 24px;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .container-presentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container-elements {
+        width: auto;
+    }
+
+    .header {
+        padding: 10%;
+    }
+
+    .header-itens {
+        justify-content: center;
+    }
+}
